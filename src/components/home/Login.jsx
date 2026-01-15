@@ -15,7 +15,7 @@ const Login = () => {
 
         // Temporary login logic (replace with API later)
         if (email === "admin@spicevilla.com" && password === "admin123") {
-            navigate("/login/dashboard");
+            navigate("/login/home");
         } else {
             setError("Invalid email or password");
         }
