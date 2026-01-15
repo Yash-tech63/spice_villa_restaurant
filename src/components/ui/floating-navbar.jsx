@@ -14,7 +14,7 @@ export const FloatingNav = ({ navItems, className }) => {
   const [visible, setVisible] = useState(true);
   const navigate = useNavigate()
   const callLogin = () => {
-    navigate("/login")
+    navigate("/")
   }
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
