@@ -9,17 +9,17 @@ const Navbar = ({ children }) => {
     const navItems = [
         {
             name: "Product",
-            link: "/",
+            link: "/login/home",
             icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Report",
-            link: "/report",
+            link: "/login/report",
             icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
         },
         {
             name: "Dashboard",
-            link: "/dashboard",
+            link: "/login/dashboard",
             icon: (
                 <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
             ),

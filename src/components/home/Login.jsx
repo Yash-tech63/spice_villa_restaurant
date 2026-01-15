@@ -15,7 +15,7 @@ const Login = () => {
 
         // Temporary login logic (replace with API later)
         if (email === "admin@spicevilla.com" && password === "admin123") {
-            navigate("/dashboard");
+            navigate("/login/dashboard");
         } else {
             setError("Invalid email or password");
         }
@@ -30,6 +30,30 @@ const Login = () => {
                 <p className="text-center text-gray-500 mb-6">
                     Admin & Staff Access
                 </p>
+                <div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-md border border-orange-200">
+
+
+
+                    <p class="text-center text-gray-600 mb-6">
+                        Use the following credentials to access the dashboard panel
+                    </p>
+
+                    <div class="bg-orange-50 border border-orange-300 rounded-xl p-4 space-y-3">
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">Email:</span>
+                            <span class="text-gray-900">admin@spicevilla.com</span>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <span class="font-semibold text-gray-700">Password:</span>
+                            <span class="text-gray-900">admin123</span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
 
                 {error && (
                     <p className="text-red-500 text-sm text-center mb-4">
